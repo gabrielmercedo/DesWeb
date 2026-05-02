@@ -1,0 +1,7 @@
+Diferencie auto-fill de auto-fit dentro de repeat(). Em qual situacao um se comporta de
+forma diferente do outro? 
+
+O auto-fill cria o maximo de colunas possiveis dentro de um container, mesmo que fiquem vazias pois ele Já
+matem o espaço reservado delas. Já o auto-fit, tambem cria o maximo de colunas possiveis porem as colunas vazia somem
+e os items se expandem para ocupar o espaço vazio. Eles se comportam diferente quando não exisitr items suficientes para
+ocupar o espaço disponivel.

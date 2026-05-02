@@ -1,0 +1,30 @@
+O CSS abaixo nao produz o layout esperado. Identifique e corrija o problema:
+
+    /* HTML tem: .pagina > header, nav, main, footer */
+        .pagina {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas:
+            "cabecalho cabecalho"
+            "nav main"
+            "rodape rodape"
+        }
+
+        header { grid-area: header; } /* problema aqui */
+        nav { grid-area: nav; }
+        main { grid-area: main; }
+        footer { grid-area: footer; } /* problema aqui */
+
+
+Qual e o problema ?
+
+O problema é que o seletor header no grid-area devia estar com o mesmo nome da area denominada para ele e a mesma coisa com o footer.
+No grid-area o atributo tem que ser o mesmo nome da area do grid-template-area.
+
+Como corrigir o header ?
+
+Para corrigir é só trocar o nome para cabecalho. Assim, header {grid-area: cabecalho; }
+
+Como corrigir o footer ?
+
+Para corrigir é só trocar o nome para rodape. Assim, footer {grid-area: rodape; }

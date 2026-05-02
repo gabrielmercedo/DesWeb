@@ -1,0 +1,6 @@
+O que acontece se voce criar uma grid-template-areas nao-retangular — por exemplo,
+nomear uma area em forma de L? O navegador gera erro, ignora silenciosamente ou algo
+diferente?
+
+Se nomear uma area em forma de L, o navegador considera errado e apenas ignora o grid-template-area. Isso acontece
+pois as areas devem formar sempre regiões retangulares.
