@@ -1,0 +1,5 @@
+Qual e a funcao do -1 na notacao grid-column: 1 / -1? Por que e mais robusto do que
+escrever o numero exato da ultima linha?
+
+A função é que quando usa o -1, a coluna sempre vai até a ultima linha. O problema de escrever o número exato da ultima linha
+é que se mudar o números de linhas o layout vai quebrar e usando o -1, o layout não quebra.
