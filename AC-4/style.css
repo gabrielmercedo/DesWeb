@@ -47,7 +47,7 @@ colunas couberem
 
  .categorias {
  display: grid;
- grid-template-columns: 2fr repeat( 4, minmax(160px, 1fr));
+ grid-template-columns: repeat( auto-fit, minmax(160px, 1fr));
  gap: 12px;
  padding: 20px;
  background-color: #e8edf2;
@@ -72,6 +72,9 @@ Quantas colunas aparecem com a janela em ~400px de largura: Aparecem 2 colunas
 
 O que acontece quando nao ha largura suficiente nem para uma coluna de 160px: Aparece 1 coluna */
 
+.card-cat:first-child {
+    grid-column: span 2;
+}
 
 .topo {
  /* mantenha o que ja existe e acrescente: */
